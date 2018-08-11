@@ -15,11 +15,13 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="container">
-			<div class="site-info">
-				&copy; <?php bloginfo( 'name' );
-						echo ' - ';
-						echo date("Y"); ?>
-			</div><!-- .site-info -->
+			<div class="row justify-content-center">
+				<div class="site-info">
+						<div style="width: 250px; margin-top: 4rem; margin-bottom: 2rem;">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/RMR-only-grey.svg" width="100%">
+						</div>
+					
+				</div><!-- .site-info -->
 		</div><!--  .container -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

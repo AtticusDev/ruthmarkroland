@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="container-fluid mb-0 text-center" style="background-color: #ffffff;">
+<!--	<div class="container-fluid mb-0 text-center" style="background-color: #ffffff;">
 		<div class="row">
 			<div class="container-fluid homebanner">
 				<div class="row align-items-end">
@@ -23,14 +23,18 @@
 			</div>
 		</div>
 	</div>
-
+-->
 	<div class="container-fluid mb-0" style="background-color:#e6e6e6;">
 		<div class="row justify-content-md-center">
-				<div class="col-sm-12 col-md-6 p-5 text-center">
-						<?php
-							the_content();
-						?>
+			<div class="container">
+				<div class="row justify-content-md-center">
+					<div class="col-sm-12 col-md-6 text-center mainContent">
+							<?php
+								the_content();
+							?>
+					</div>
 				</div>
+			</div>
 		</div>
 	</div>
 

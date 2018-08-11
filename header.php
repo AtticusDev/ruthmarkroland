@@ -28,8 +28,9 @@
 			<div class="row">
 				<div class="container">
 					<div class="row justify-content-center">
-						<div style="width: 250px; margin-top: 50px;">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/RMR-master-logo.jpg" width="100%">
+						<div style="width: 300px; margin-top: 4rem; margin-bottom: 2rem;">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/RMR-master-logo.svg" width="100%">
+						</div>
 					</div>
 				</div>
 			</div>
