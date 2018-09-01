@@ -16,10 +16,12 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="site-info">
-						<div style="width: 250px; margin-top: 4rem; margin-bottom: 2rem;">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/RMR-only-grey.svg" width="100%">
-						</div>
+				<div class="site-info text-center contactDetailsFooter">
+						<p>consulting rooms<br />
+							the guild<br />
+							London sw1 5ap<br />
+							07940 840743<br />
+							<a href="mailto:ENQUIRIES@ruthmarkroland.com">ENQUIRIES@ruthmarkroland.com</a></p>
 					
 				</div><!-- .site-info -->
 		</div><!--  .container -->

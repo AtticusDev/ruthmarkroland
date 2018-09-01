@@ -108,6 +108,64 @@ h2 {
   padding: 6rem 2rem;
 }
 
+.mainLogo{
+  width:16rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.homebanner {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  width: 100%; 
+  height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+}
+
+.quoteText{
+  padding-right: 40%;
+  padding-top:4rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.quoteCredit{
+  width: fit-content;
+  color: #cc9999;
+  border-top: 1px solid #cc9999;
+  padding-top:0.5rem;
+  margin-top: 0.7rem;
+}
+
+/* BUTTONS */
+
+.bookBtn {
+  white-space: normal;
+  padding: 1rem 2rem;
+  border: 0;
+  border-radius: 0;
+  background-color: #e6e6e7;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+  font-family:'Gill Sans W01 Light';
+  margin-top:2rem;
+}
+.bookBtn:hover {
+  background-color: #dbdcdd;
+  color: #000000; 
+}
+
+
+/* END BUTTONS */
 
 /* FORM STYLING */
 
@@ -170,4 +228,8 @@ div.gform_footer.top_label {
   .mainContent{
     padding: 4rem 1rem;
   }
+
+
+
+
 }
