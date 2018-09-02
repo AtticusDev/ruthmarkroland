@@ -6950,10 +6950,20 @@ a.text-dark:hover, a.text-dark:focus {
       flex: 0 0 100%;
   max-width: 100%; }
 
+/* This class is added on scroll */
+.fixed {
+  position: fixed;
+  top: 0;
+  height: auto;
+  z-index: 1; }
+
+.scrollSpace {
+  margin-top: 83px; }
+
 body {
   font-family: 'Gill Sans W01 Light';
-  font-size: 1.1rem;
-  line-height: 1.8;
+  font-size: 1rem;
+  line-height: 1.6;
   color: #474c55; }
 
 h2 {
@@ -6974,7 +6984,10 @@ h2 {
     color: #cc9999; }
 
 .mainContent {
-  padding: 6rem 2rem; }
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+  padding-left: 2rem;
+  padding-right: 2rem; }
 
 .mainLogo {
   width: 16rem;
@@ -6991,6 +7004,11 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
+
+.introText {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
 
 .quoteText {
   padding-right: 40%;
@@ -7080,9 +7098,7 @@ div.gform_footer.top_label {
     width: 100%; }
   .contactDetails {
     font-size: 1rem;
-    letter-spacing: 0.1rem; }
-  .mainContent {
-    padding: 4rem 1rem; } }
+    letter-spacing: 0.1rem; } }
 
 /*--------------------------------------------------------------
 ## Widgets

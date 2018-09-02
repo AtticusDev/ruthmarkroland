@@ -77,12 +77,22 @@
 	}
 }
 
+/* This class is added on scroll */
+.fixed {
+  position: fixed; 
+  top: 0; 
+  height: auto; 
+  z-index: 1;
+}
+.scrollSpace{
+  margin-top:83px;
+}
 
 body
 {
   font-family:'Gill Sans W01 Light';
-  font-size: 1.1rem;
-  line-height: 1.8;
+  font-size: 1rem;
+  line-height: 1.6;
   color: #474c55;
 }
 h2 {
@@ -105,7 +115,10 @@ h2 {
   
 }
 .mainContent{
-  padding: 6rem 2rem;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .mainLogo{
@@ -127,6 +140,11 @@ h2 {
 
 }
 
+.introText{
+  font-size:1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom:1.5rem;
+}
 .quoteText{
   padding-right: 40%;
   padding-top:4rem;
@@ -224,9 +242,6 @@ div.gform_footer.top_label {
   .contactDetails {
   font-size: 1rem;
   letter-spacing: 0.1rem;
-  }
-  .mainContent{
-    padding: 4rem 1rem;
   }
 
 
