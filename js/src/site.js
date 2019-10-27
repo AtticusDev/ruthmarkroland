@@ -3,7 +3,7 @@ jQuery(document).ready(function($){
 
 	var $header = $('.navfixed'),
 	    scrollClass = 'fixed',
-	    activateAtY = 188;
+	    activateAtY = 186;
 	var $sitecontent = $('.site-content'),
 		scrollSpace = 'scrollSpace';
 

@@ -17,10 +17,7 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="site-info text-center contactDetailsFooter">
-						<p>consulting rooms<br />
-							the guild<br />
-							London sw1 5ap<br />
-							07940 840743<br />
+							<?php the_field("footer_address", "option"); ?>
 							<a href="mailto:ENQUIRIES@ruthmarkroland.com">ENQUIRIES@ruthmarkroland.com</a></p>
 					
 				</div><!-- .site-info -->

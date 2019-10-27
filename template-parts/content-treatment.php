@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in about.php
+ * Template part for displaying page content in treatment.php
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -31,45 +31,40 @@
 			</div>
 		</div>
 	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 mt-5 mb-5">
+						<div class="treatment-intro-block">
+						<?php
+							the_content();
+						?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="container-fluid gray5">
 		<div class="row">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 p-4">
-						<div class="content-block">
-							<span class="introText"><?php the_content(); ?></span>
+						<div class="treatment-content-block">
+							<?php the_field('left_col_text') ?>
 						</div>
 					</div>
 					<div class="col-md-6 p-4">
-						<div class="content-block">
-							<?php the_field('text_one'); ?>
+						<div class="treatment-content-block">
+							<?php the_field('right_col_text') ?>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 p-4">
-						<div class="content-block text-center">
-							<img src="<?php bloginfo('stylesheet_directory'); ?>/images/rmr-about.png"><br />
-							<div class="quoteBlock">
-								<?php the_field('quote_block'); ?>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 p-4">
-							<?php the_field('text_two'); ?>
 
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 p-4">

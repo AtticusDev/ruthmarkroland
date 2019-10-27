@@ -2,7 +2,97 @@
 	margin-bottom: 0em;
 }
 
+.navbar-expand-lg .navbar-nav .menu-item {
+    margin: 0 2rem;
+  font-family:'Gill Sans W01 Light';
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    position: relative;
+    display: block;
+    text-align: left;
+    color: #ffffff;
+    transition: color 0.5s;
+    font-weight: 400;
+}
+
+
+.navbar-expand-lg .navbar-nav .active .nav-link {
+    color:#ffffff;
+}
+.navbar-expand-lg .navbar-nav .nav-link::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+//  z-index: 20;
+    background: #e5acbe;
+    transition: all 0.3s;
+    transition: 0.4s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover:before{
+    color:#000000;
+    width: 100%;
+}
+
+.navbar-expand-lg .navbar-nav .active .nav-link::before{
+    color:#000000;
+    width: 100%;
+}
+
+
+@media (min-width: 992px){
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0rem;
+    padding-left: 0rem;
+  }
+}
+
+.topNavBar {
+    padding-top:1rem;
+    margin-top: 1rem;
+    border-bottom: 3px solid #d0d0d0;
+    height: 2.7rem;
+    width: 100%;
+}
+@media (max-width: 992px){
+    .header-nav-container{
+        display:none;
+    }
+    .topNav{
+        display:none;
+    }
+    .topNavBar{
+        display:none;
+    }
+}
+
+
+
+
+
 @import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=8b020e44-c402-41a0-856c-963106a715da");
+    @font-face{
+        font-family:"Bodoni LT W01 Book";
+        src:url("Fonts/3aad56ef-4e2a-4f26-acc1-49e3ee2a1d2c.eot?#iefix");
+        src:url("Fonts/3aad56ef-4e2a-4f26-acc1-49e3ee2a1d2c.eot?#iefix") format("eot"),url("Fonts/742889c7-71b5-4f98-bd05-4525f454c696.woff2") format("woff2"),url("Fonts/6abe77b8-6af9-446d-b68e-f88b9d335631.woff") format("woff"),url("Fonts/4105901b-acd4-4419-b60a-b9e76a714c6e.ttf") format("truetype");
+    }
+    @font-face{
+        font-family:"Bodoni LT W01 Roman";
+        src:url("Fonts/d3ad957f-1bce-4dc9-88c3-737eafb2923c.eot?#iefix");
+        src:url("Fonts/d3ad957f-1bce-4dc9-88c3-737eafb2923c.eot?#iefix") format("eot"),url("Fonts/9b289b92-3e7e-4321-a878-45b075061b7b.woff2") format("woff2"),url("Fonts/e50f1722-ceb6-41c6-ace7-99b43c9394e9.woff") format("woff"),url("Fonts/96031d11-ca7f-48f5-b7a0-551c154733b5.ttf") format("truetype");
+    }
+    @font-face{
+        font-family:"Bodoni LT W01 Bold";
+        src:url("Fonts/13c318c6-58b8-46c4-947a-96c21e00b6a4.eot?#iefix");
+        src:url("Fonts/13c318c6-58b8-46c4-947a-96c21e00b6a4.eot?#iefix") format("eot"),url("Fonts/6e25e056-eccc-4f0a-8de0-e06493b773f9.woff2") format("woff2"),url("Fonts/48b3d988-975b-4840-aa8f-3f625d516d89.woff") format("woff"),url("Fonts/36d73dd4-f1a0-4616-86df-9f28e7370e52.ttf") format("truetype");
+    }
     @font-face{
         font-family:"Gill Sans W01 Light";
         src:url("Fonts/acd8a043-828c-4c2c-98cb-b5224f5d4cdb.eot?#iefix");
@@ -33,4 +123,3 @@
         src:url("Fonts/e2d1fd51-cc5e-4cfe-82f1-a6fb8b915569.eot?#iefix");
         src:url("Fonts/e2d1fd51-cc5e-4cfe-82f1-a6fb8b915569.eot?#iefix") format("eot"),url("Fonts/67903513-1227-4b23-ac40-c20c452c8db1.woff2") format("woff2"),url("Fonts/13437aee-fc9a-4378-886e-cde8c611857b.woff") format("woff"),url("Fonts/401121a5-d55e-49f5-bd62-aed0f5d202a3.ttf") format("truetype");
     }
-

@@ -85,26 +85,52 @@
   z-index: 1;
 }
 .scrollSpace{
-  margin-top:83px;
+  margin-top:80px;
 }
 
 body
 {
   font-family:'Gill Sans W01 Light';
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.6;
-  color: #474c55;
+  color: $rmrgray;
 }
-h2 {
-  font-size: 1.5rem;
+h1 {
+  font-size: 1.8rem;
   letter-spacing: 0.2rem;
-  text-transform: uppercase;
-  font-family:'Gill Sans W01 Medium';
+  font-family:'Bodoni LT W01 Book';
+    -webkit-font-smoothing:antialiased;
+
   font-weight: 400;
   margin-top: 4rem;
   margin-bottom: 2rem;
-  color:#cc9999;
+  color:#cc9999;  
 }
+
+h2 {
+  font-size: 1.9rem;
+  letter-spacing: 0.1rem;
+  font-family:'Bodoni LT W01 Book';
+    -webkit-font-smoothing:antialiased;
+
+  font-weight: 400;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  font-family:'Gill Sans W01 Light';
+    -webkit-font-smoothing:antialiased;
+
+  font-weight: 400;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  
+}
+
+
 .contactDetails {
   font-size: 1.2rem;
   letter-spacing: 0.2rem;
@@ -113,12 +139,6 @@ h2 {
       color:#cc9999;
   }
   
-}
-.mainContent{
-  padding-top: 2rem;
-  padding-bottom: 6rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .mainLogo{
@@ -146,41 +166,130 @@ h2 {
   margin-bottom:1.5rem;
 }
 .quoteText{
-  padding-right: 40%;
+  font-family:'Bodoni LT W01 Book';
+  -webkit-font-smoothing:antialiased;
+  letter-spacing: 0.1rem;
+  padding-left: 55%;
   padding-top:4rem;
   color: white;
+  text-align: center;
+  font-size: 2.2rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-
-.quoteCredit{
-  width: fit-content;
-  color: #cc9999;
-  border-top: 1px solid #cc9999;
-  padding-top:0.5rem;
-  margin-top: 0.7rem;
+.quoteBlock{
+  font-family:'Bodoni LT W01 Book';
+  -webkit-font-smoothing:antialiased;
+  letter-spacing: 0.1rem;
+  padding: 4rem;
+  color: $rmrgray;
+  text-align: center;
+  font-size: 1.8rem;
 }
+
+.gray10 {
+  color: $rmrpink;
+}
+.gray5 {
+  background-color: $rmrgray5;
+}
+.content-block-grey10 {
+  background-color: $rmrgray10;
+  padding: 3rem;
+}
+.content-block-grey5 {
+  background-color: $rmrgray5;
+  padding: 3rem;
+}
+.content-block {
+  padding: 3rem;
+}
+.circleWrapper {
+  width: 100%;
+}
+.circleBlock {
+  background-image: url(images/blue-circle.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+.circleText {
+  color: #ffffff;
+}
+.treatment-intro-block {
+  padding: 0rem 8rem;
+  text-align: center;
+}
+.treatment-content-block {
+  padding: 2rem;
+}
+
+
 
 /* BUTTONS */
 
-.bookBtn {
-  white-space: normal;
-  padding: 1rem 2rem;
-  border: 0;
-  border-radius: 0;
-  background-color: #e6e6e7;
-  color: #000000;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  font-size: 1rem;
+.largeBtn {
   font-family:'Gill Sans W01 Light';
-  margin-top:2rem;
+  opacity: 1;
+  white-space: normal;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border: 1;
+  border-color: $rmrgray;
+  border-radius: 0;
+  font-size: 0.9rem;
+  margin: 1rem 0 2rem 0;
+  transition: all 0.3s;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
 }
-.bookBtn:hover {
-  background-color: #dbdcdd;
-  color: #000000; 
+.largeBtn:after {
+  content: '\2192';
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: 2rem;
+  transition: 0.3s;
 }
+.largeBtn:hover{
+//  background-color: $rmrgray5;
+  padding-right: 5rem;
+  padding-left:1rem;
+}
+
+.largeBtn:hover:after {
+  opacity: 1;
+  right: 1rem;
+}
+
+.largeBtn.whiteBtn {
+  color: $white;
+  border: 1px solid rgba(255,255,255,1);
+} 
+
+.largeBtn.whiteBtn:hover {
+  background-color: rgba(255,255,255,0.25); 
+}
+
+.largeBtn .grayBtn {
+  border-color: $rmrgray;
+}
+.largeBtn.grayBtn:hover {
+  background-color: rgba(245,245,245,1); 
+}
+
 
 
 /* END BUTTONS */
@@ -231,7 +340,7 @@ div.gform_footer.top_label {
 /* END FORM STYLING */
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 991px) {
   h2 {
   font-size:1rem;
   }
@@ -244,7 +353,30 @@ div.gform_footer.top_label {
   letter-spacing: 0.1rem;
   }
 
+  .circleBlock {
+    width: 150px;
+    height: 150px;
+    color: #ffffff;
+    vertical-align: middle;
+    display: table-cell;
+  }
+  .content-block {
+    padding: 1rem;
+  }
 
+  .quoteBlock{
+    padding: 1rem;
+    color: $rmrgray;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .treatment-intro-block {
+    padding: 0rem 1rem;
+    text-align: center;
+  }
+  .treatment-content-block {
+    padding: 1rem;
+  }
 
 
 }

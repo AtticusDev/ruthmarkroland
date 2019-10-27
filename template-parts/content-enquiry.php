@@ -16,8 +16,8 @@
 			<div class="container">
 				<div class="row justify-content-md-center">
 					<div class="col-sm-12 col-md-8 text-center mainContent">
-						<h2 class="p1">book a free get-to-know-you call directly with Ruth</h2>
-							<p class="contactDetails">Call 07940 840743
+						<h3>book a free get-to-know-you call directly with Ruth</h3>
+							<p class="contactDetails">Call 07940 840743<br />
 							EMAIL <a href="mailto:enquiries@ruthmarkroland.com">enquiries@ruthmarkroland.com</a></p>
 
 							<?php
